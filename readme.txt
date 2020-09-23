@@ -1,0 +1,3 @@
+suoeruser:      django
+
+password:       admin
