@@ -71,15 +71,29 @@ h6 {
 }
 
 
-
 /*intro_product*/
 
 .intro_product {
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    background-color: #eee;
+    height: 100vh;
+    background-color: #333;
+    background-size: cover;
+    position: relative;
 
+}
+
+.product_foto{
+    top: 100px;
+    left: 10px;
+    position: absolute;
+
+}
+
+.product_desscription{
+    left: 330px;
+    top: 100px;
+    position: absolute;
+    color: #fff;
 }
 
 
@@ -111,7 +125,7 @@ h6 {
 /*nav*/
 
 .nav {
-    font-size: 14px;
+    font-size: 15px;
     text-transform: uppercase;
 }
 
@@ -221,6 +235,14 @@ background-color: rgba(500, 500, 500, 0.5);
 
 
 
+/*location*/
+.location{
+    color: #fff; 
+    left: 330px;
+    top: 100px;
+    position: absolute;
+    
+}
 
 
 

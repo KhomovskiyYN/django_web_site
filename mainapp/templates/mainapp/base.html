@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat+Alternates:wght@400;500&display=swap"
+          rel="stylesheet">
+    <title>{{ page_title|title }}</title>
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    {% endblock %}
+
+    {% block js %}
+    {% endblock %}
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header_inner">
+            <div class="header_logo">hOmka</div>
+            <nav class="nav">
+                <a class="nav_link active" href="{% url 'index' %}">домой</a>
+                <a class="nav_link" href="{% url 'products' %}">продукты</a>
+                <a class="nav_link" href="{% url 'contact' %}">контакты</a></nav>
+        </div>
+    </div>
+    {% block header_menu %}
+    {% endblock %}
+</header>
+
+{% block intro %}
+
+{% endblock %}
+
+<div class="footer">
+    <p>&copy; Все права защищены</p>
+</div>
+
+
+
+
+</body>
+</html>
