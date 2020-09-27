@@ -22,9 +22,9 @@
         <div class="header_inner">
             <div class="header_logo">hOmka</div>
             <nav class="nav">
-                <a class="nav_link active" href="{% url 'index' %}">домой</a>
-                <a class="nav_link" href="{% url 'products' %}">продукты</a>
-                <a class="nav_link" href="{% url 'contact' %}">контакты</a></nav>
+                <a class="nav_link active" href="{% url 'main:index' %}">домой</a>
+                <a class="nav_link" href="{% url 'main:products' %}">продукты</a>
+                <a class="nav_link" href="{% url 'main:contact' %}">контакты</a></nav>
         </div>
     </div>
     {% block header_menu %}
@@ -37,6 +37,8 @@
 
 <div class="footer">
     <p>&copy; Все права защищены</p>
+    <!--{{ datetime }}-->
+    {% now "d.m.Y" %}
 </div>
 
 

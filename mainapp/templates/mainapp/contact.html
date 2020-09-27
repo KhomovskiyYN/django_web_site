@@ -4,19 +4,23 @@
 <div class="intro_product">
     <div class="container">
         <div class="location">
-            <h4>Москва</h4>
+
+            {% for item in locations %}
+            <h4>{{item.city }}</h4>
             <div class="contacts">
                 <h5>Телефон</h5>
-                <p>+7-888-888-8888</p>
+                <p>{{ item.phone }}</p>
             </div>
             <div class="contacts">
                 <h5>Email</h5>
-                <p>info@homkashop.ru</p>
+                <p>{{ item.phone }}</p>
             </div>
             <div class="contacts">
                 <h5>Адрес</h5>
-                <p>В пределах МКАД</p>
+                <p>{{ item.phone  }}</p>
             </div>
+            {% endfor %}
+
         </div>
     </div>
 </div>
