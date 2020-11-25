@@ -8,7 +8,7 @@
           rel="stylesheet">
     <title>{{ page_title|title }}</title>
     {% block css %}
-     " href="{% static 'css/style.css' %}">
+      <link rel="stylesheet" type="text/css" href="/static/css/style.css">
     {% endblock %}
 
     {% block js %}
@@ -40,9 +40,6 @@
     <!--{{ datetime }}-->
     {% now "d.m.Y" %}
 </div>
-
-
-
 
 </body>
 </html>
