@@ -6,7 +6,7 @@ from datetime import datetime
 def index (request):
     context = {
         'page_title' : 'главная',
-        #'datetime': datetime.now(),
+        # 'datetime': datetime.now(),
     }
     return render(request, 'mainapp/index.html', context)
 

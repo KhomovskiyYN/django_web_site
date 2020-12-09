@@ -1,5 +1,5 @@
 {% extends 'mainapp/base.html' %}
-
+{% load static %}
 
 {% block header_menu %}
 <div class="header_menu">
@@ -12,7 +12,7 @@
 
 {% block intro %}
 <div class="intro_product">
-    <div class="product_foto"><img src="/static/img/orange_sweater.jpg" alt="" width="300px"></div>
+    <div class="product_foto"><img src="{% static 'img/orange_sweater.jpg' %}" alt="" width="300px"></div>
     <div class="product_desscription">
         <h1>Оранжевая водолазка</h1>
         <p class="detailed_description">Водолазка выполнена из высококачественного трикотажа.
