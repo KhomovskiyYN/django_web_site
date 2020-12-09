@@ -37,7 +37,6 @@ def contact(request):
 
         },
     ]
-
     context = {
         'page_title': 'контакты',
         'locations': locations,
