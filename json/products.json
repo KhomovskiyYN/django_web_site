@@ -1,0 +1,29 @@
+[
+    {
+        "category": "аксесуары",
+        "name": "черная сумка",
+        "image": "products_images/black_bag.jpg",
+        "short_desc": "черная сумка",
+        "description": "подойдет к любому образу",
+        "price": "2989.5",
+        "quantity": "17"
+    },
+    {
+        "category": "обувь",
+        "name": "Синие ботинки",
+        "image": "products_images/blue_boots.jpg",
+        "short_desc": "Синие ботинки",
+        "description": "стильно использованы комфортное использованы любую погоду",
+        "price": "7687.2",
+        "quantity": "21"
+    },
+    {
+        "category": "трикотаж",
+        "name": "Оранжевый свитер",
+        "image": "products_images/orange_sweater.jpg",
+        "short_desc": "Оранжевый свитер",
+        "description": "Приятный использованы комфортный свитер",
+        "price": "8157.99",
+        "quantity": "7"
+    }
+]
