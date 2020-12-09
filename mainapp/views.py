@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from datetime import datetime
+from mainapp.models import ProductCategory
 
 
-# Create your views here.
-def index (request):
+def index(request):
     context = {
         'page_title' : 'главная',
         # 'datetime': datetime.now(),
@@ -11,9 +11,11 @@ def index (request):
     return render(request, 'mainapp/index.html', context)
 
 
-def products (request):
+def products(request):
+    categories = ProductCategory.objects.all()
     context = {
         'page_title': 'каталог',
+        'categories': categories,
     }
     return render(request, 'mainapp/products.html', context)
 

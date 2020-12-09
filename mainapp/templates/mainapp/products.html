@@ -3,9 +3,10 @@
 
 {% block header_menu %}
 <div class="header_menu">
-    <nav class="nav_menu"><a class="nav_link_menu " href="#">Верхняя одежда</a> <a class="nav_link_menu"
-                                                                                   href="#">Обувь</a> <a
-            class="nav_link_menu" href="#">Аксесуары</a></nav>
+    <nav class="nav_menu">
+        {% for category in categories %}
+            <a class="nav_link_menu" href="#">{{ category.name }}</a>
+        {% endfor %}
 </div>
 {% endblock %}
 
